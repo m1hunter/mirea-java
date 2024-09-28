@@ -1,4 +1,4 @@
-package task2_1;
+package task2;
 
 public class Car {
     private String model;
@@ -6,12 +6,19 @@ public class Car {
     private String color;
     private int year;
     private static int currentYear = 2024;
-
+    //  По умолчанию
+    public Car() {}
+    // С 2 параметрами
+    public Car(String model, String license) {
+        this.model = "PEGASSI INFERNUS";
+        this.license = "FCL1989";
+    }
+    // Получает значения от пользователя в main
     public Car(String model, String license, String color, int year) {
-        this.model = "";
-        this.license = "";
-        this.color = "";
-        this.year = 0;
+        this.model = model;
+        this.license = license;
+        this.color = color;
+        this.year = year;
     }
 
     public String GetModel() {
@@ -51,6 +58,7 @@ public class Car {
     }
 
     public String To_String() {
-        return "Model: " + this.model + " License: " + this.license + " Color: " + this.color + " Year: " + this.year + " Age: " + GetCarAge() + " years";
+        return "Model: " + this.model + " License: " + this.license + " Color: " + this.color + " Year: " + this.year
+                + " Age: " + GetCarAge() + " years";
     }
 }

@@ -1,10 +1,12 @@
-package task2_1;
+package task2;
 
 public class Main {
     public static void main(String[] args) {
-        Car car1 = new Car("DODGE CHALLENGER", "OLOLOLLO", "YELLOW", 2015);
-        Car car2 = new Car("HONDA CIVIC", "6AHDUTUK", "SILVER", 2006);
+        Car car0 = new Car();
+        Car car1 = new Car("", "");
+        Car car2 = new Car("HONDA CIVIC", "DEDOK", "SILVER", 2006);
 
+        System.out.println("CAR0: " + car0.To_String());
         System.out.println("CAR1: " + car1.To_String());
         System.out.println("CAR2: " + car2.To_String());
 
